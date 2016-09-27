@@ -1,0 +1,334 @@
+html {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			font-family: "Source Sans Pro", Sans-Serif;
+			font-size: 19px;
+			line-height: 22px;
+			padding: 0;
+			margin: 0;
+			background-image: url(../img/bodyBg.png);
+			-webkit-font-smoothing: antialiased;
+		}
+
+		/* --- Flexbox Grid Layout Pattern - 3 --- */
+		/* --- 3 Column Flexbox Grid Layout --- */
+		/* --- Flexbox Holy Grail Grid Layout Pattern --- */
+		.row {
+			display: flex;
+			flex-flow: column wrap;
+		}
+		.col {
+			flex: 1;
+			margin: 25px 18px 0 0;
+			padding: 14px;
+			color: #FFF;
+		}
+
+		@media screen and (min-width: 640px) {
+			.row {flex-flow: row wrap;}
+			main .col:nth-child(1) {flex: 1 1 100%;}
+			main .col:nth-child(2) {flex: 2;}
+		}
+
+		@media screen and (min-width: 960px) {
+			main .col:nth-child(1) {
+				flex: 1;
+				margin-left: 20px;
+			}
+			header .col {
+				margin: 0 0 8px 0;
+				height: 170px;
+				padding: 0;
+				background-image: url(../img/TopHead.png);
+				background-position: bottom;
+				background-repeat: no-repeat;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				overflow: hidden;
+			}
+			main {
+				margin: 0 auto;	
+			}
+			main .col {
+				width: 969px;
+				text-align: center;
+				border-radius: 10px;
+				display: flex;
+				height: auto;
+				color: #cccccc;
+			}
+			section .col {
+				line-height: 200px;
+				margin-top: 50px;
+				margin-bottom: 50px;
+				background-color: rgba(53, 98, 156, 0.6);
+			}
+			section .col:nth-child(1) {
+				margin-left: 150px;
+				margin-right: 30px;
+			}
+			section .col:nth-child(3) {
+				margin-right: 150px;
+				margin-left: 30px;
+			}
+			footer .col {
+				margin: 0;
+				background-color: rgba(53, 98, 156, 0.6);
+			}
+
+		}
+
+		.wrapper {
+			display: flex;
+			flex-flow: column wrap;
+			min-height: 100vh;
+		}
+
+		main {flex: 1;}
+
+/*---------------------*/
+
+.box {
+    width: 960px;
+    margin: 0px;
+}
+
+#bluebox { 
+	outline: 0px solid #cccccc;
+	margin: 0;
+	padding: 5px 0 0 0;
+	height: 34px;
+	overflow: hidden;
+}
+#bluebox  img {
+	padding-top: 4px;
+	float: left;
+}
+
+#bluebox p {
+	float: left;
+	padding-left: 14px;
+	padding-top: 2px;
+	font-size: 21px;
+}
+
+#bluebox #freeShip {
+	color: #bacde4;
+	font-size: 13px;
+	font-family: "Arial", sans-serif;
+	padding-left: 54px;
+	padding-right: 48px;
+}
+
+#bluebox .uList a {
+	list-style-type: none;
+	float: left;
+	outline: 0px solid #cc0000;
+	margin-right: 12px;
+	box-sizing: border-box;
+}
+
+#bluebox .uList img {
+	padding: 0;
+	margin: 0;
+}
+
+#bluebox ul li {
+	display: inline;
+}
+
+#bluebox .account {
+	font-size: 13px;
+	color: #bacde4;
+	font-family: "Arial", sans-serif;
+	float: left;
+	outline: 0px solid #cc0000;
+	padding: 0;
+	margin: 3px 0 0 40px;
+}
+
+#bluebox .account a {
+	text-decoration: none;
+	color: #bacde4;
+}
+
+.button {
+	width: 139px;
+	background-image: url(../img/shopcart.png);
+	background-repeat: no-repeat;
+	outline: 0px solid #cc0000;
+	float: left;
+	margin-left: 25px;
+}
+
+.button .cart {
+	outline: 0px solid #cccccc;
+	margin-left: 12px;
+	margin-top: 1px;
+}
+
+.button a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 12px;
+	font-family: "Arial", sans-serif;
+}
+
+.button #shop {
+	outline: 0px solid #cccccc;
+	margin-left: 6px;
+	position: relative;
+	top: -2px;
+}
+
+.button .shopRight {
+	outline: 0px solid blue;
+	font-size: 15px;
+	margin-left: 24px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+/*------------*/
+
+#redbox { 
+	height: 114px;	
+	margin-top: 22px;
+}
+
+#redbox a img {
+	float: left;
+}
+
+#redbox .uList {
+	margin-top: 28px;
+	float: left;
+}
+
+#redbox .uList a li {
+	display: inline;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 8px 12px 7px 9px;
+	margin-right: 22px;
+}
+
+.firstLi {
+	margin-left: 75px;
+}
+
+#redbox .uList a {
+	text-decoration: none;
+	color: #f1f1f1;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: "Arial";
+	font-weight: bold;
+}
+
+#redbox .uList a:hover {
+	color: #f8f5c6;
+}
+
+.active{
+  background-image: url(../img/nav-active.png);
+}
+
+/*--------*/
+
+.sign {
+	background-image: url(../img/signup.png);
+	width: 92px;
+	height: 53px;
+	float: right;
+	margin-top: 26px;
+	outline: 0px solid #ffffff;
+}
+
+.clear {
+	clear: both;
+}
+
+.sign a {
+	text-decoration: none;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: "Arial bold", sans-serif;
+	font-weight: bold;
+	vertical-align: text-top;
+	letter-spacing: -0.5px;
+}
+
+
+
+.lockSign img, .penLock img {
+	margin: 6px 0 0 6px;
+}
+
+
+
+.lockSign a {
+	margin-left: 4px;
+	color: #fe6847;
+}
+
+.penLock a {
+	color: #008281;	
+}
+
+/*-----------*/
+
+.search {
+	height: 26px;
+	width: 404px;
+	position: relative;
+	margin-top: 90px;
+	margin-left: 276px;
+	
+}
+
+.search input {
+	height: 24px;
+	width: 320px;
+	background-image: url(../img/inputBg.png);
+	padding-left: 10px;
+	border: 1px solid #aca856;
+	float: left;
+	z-index: 5;
+}
+
+.search a {
+	z-index: 10;
+}
+
+/*------MAIN------*/
+
+#slider {
+	background-image: url(../img/slider.jpg);
+	height: 360px;
+}
+
+
+
+
+/*---SECTION---*/
+
+section {
+	margin: 10px auto;
+	width: 960px;
+}
+
+section .row {
+	width: 100%;
+}

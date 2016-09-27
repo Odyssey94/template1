@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: sans-serif;
+}
+img {
+	max-width: 100%;
+}
+.cycle-slideshow {
+	width: 100%;
+	max-width: 972px;
+	height: 360px;
+	display: block;
+	position: relative;
+	margin: 20px auto;
+	background-image: url(../img/slider.jpg);
+	background-repeat: no-repeat;
+	border-radius: 11px;
+    overflow: hidden;
+}
+.cycle-slideshow img {
+    margin-left: 172px;
+    margin-top: 15px;
+}
+.cycle-slideshow .lemon_img,
+.cycle-slideshow .champaign {
+	margin-left: 11px;
+}
+.cycle-slideshow .button {
+    background-image: url("../img/slide_button.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 242px;
+    top: 245px;
+    width: 190px;
+    height: 46px;
+    z-index: 99999;
+}
+.cycle-slideshow h1 {
+    margin-left: 545px;
+    margin-top: -234px;
+    color: #ea5000;
+    font-size: 25px;
+    font-family: "Times New Roman", sans-serif;
+    padding-top: 0;
+}
+.cycle-slideshow h1 #h_mango {
+    font-size: 60px;
+    position: relative;
+    top: -12px;
+    left: 0;
+}
+.cycle-slideshow h1 #h_shop {
+	color: #588313;
+	font-size: 60px;
+    position: relative;
+    top: -30px;
+}
+.cycle-slideshow .button a {
+    bottom: -10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 35px;
+    position: relative;
+    text-decoration: none;
+}
+
+/*----pager---*/
+.cycle-pager {
+    bottom: 18px;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 140%;
+    z-index: 9999;
+	display: block;
+
+}
+.cycle-pager a {
+	margin: 10px 0 -5px 800px;
+    opacity: .4;
+    border: 2px solid rgba(255,255,255,0.30);  
+}
+.cycle-pager .cycle-pager-active {
+	opacity: 1;
+	border: 2px solid rgba(255,255,255,0.80);
+}
+.cycle-pager .thumb {
+	width: 10%;
+}
+.thumb {
+	display: block;
+}
+.cycle-pager a img {
+    margin: 0;
+}
